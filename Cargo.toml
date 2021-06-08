@@ -1,0 +1,13 @@
+[package]
+name = "rust-windows-linker-external-symbols-issue"
+version = "0.1.0"
+authors = ["Radu M <root@radu.sh>"]
+edition = "2018"
+
+[dependencies]
+crate-with-external-symbols = { path = "crate/crate-with-external-symbols" }
+
+[workspace]
+members = [
+    "crate/crate-with-external-symbols"
+]
